@@ -26,6 +26,45 @@
 	# 訂正数量: my_sOrderSuryou （ *：変更なし、訂正数量：数量を変更（増株不可）。）
                                 # ※訂正数量には、内出来を含んだ数量を指定
 
+	# 訂正例 ----------------------
+    # 値上げ: 100円 -> 110円
+    ##my_sOrderNumber = '12345678'      
+    ##my_sEigyouDay = '20221025'  
+    ##my_sCondition = '*'
+    ##my_sOrderPrice = '110'
+    ##my_sOrderSuryou = '*'
+
+    # 指値から成行に訂正
+    ##my_sOrderNumber = '12345678'      
+    ##my_sEigyouDay = '20221025'  
+    ##my_sCondition = '*'
+    ##my_sOrderPrice = '0'
+    ##my_sOrderSuryou = '*'
+
+    # 指値100円から指値100円不出来引け成に訂正
+    ##my_sOrderNumber = '12345678'      
+    ##my_sEigyouDay = '20221025'  
+    ##my_sCondition = '6'
+    ##my_sOrderPrice = '*'
+    ##my_sOrderSuryou = '*'
+
+    # 株数削減: 500株 -> 200株
+    ##my_sOrderNumber = '12345678'      
+    ##my_sEigyouDay = '20221025'  
+    ##my_sCondition = '*'
+    ##my_sOrderPrice = '*'
+    ##my_sOrderSuryou = '200'
+
+    # 価格と株数削減を同時に指定
+    # 値上げ: 100円 -> 110円
+    # 株数削減: 500株 -> 200株
+    ##my_sOrderNumber = '12345678'      
+    ##my_sEigyouDay = '20221025'  
+    ##my_sCondition = '*'
+    ##my_sOrderPrice = '110'
+    ##my_sOrderSuryou = '200'
+
+
 ４)実行は、設定ファイルや「e_api_login_tel.py」と同じディレクトリで実行してください。
 
 	事前に
